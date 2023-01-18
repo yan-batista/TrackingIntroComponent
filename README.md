@@ -49,7 +49,9 @@ Users should be able to:
 
 **Hidding an absolute positioned element**
 
-I went throught a lot of trouble before I found out that I should make sure to have the parent element be relative positioned when having a absolute positioned with `overflow: hidden`
+I went throught a lot of trouble before I found out that I should make sure to have the parent element be relative positioned when having a absolute positioned with `overflow: hidden`.
+
+Even though I had the div container with `overflow: hidden`, the image inside it was still showing up complete, over the borders and making the page bigger.
 
 ## Author
 

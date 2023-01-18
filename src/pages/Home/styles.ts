@@ -99,7 +99,6 @@ export const MainContainer = styled.div`
 
     line-height: 25px;
     font-weight: 500;
-    color: ${colors.grayishBlue};
   }
 
   @media ${devices.tablet} {

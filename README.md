@@ -29,6 +29,13 @@ Users should be able to:
 
 ### Screenshot
 
+![desktop-home](./images/desktop.png)
+
+<p align="center">
+  <img src="./images/mobile.png" width="300"/>
+  <img src="./images/mobile-navigation.png" width="300"/>
+</p>
+
 ### Links
 
 - Solution URL: [Solution](https://www.frontendmentor.io/solutions/project-tracking-intro-component-mu2lrsaRPo)

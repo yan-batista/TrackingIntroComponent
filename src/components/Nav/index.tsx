@@ -1,16 +1,29 @@
 import React from "react";
 
-import ManageMenu from "../ManageMenu";
+import Hamburguer from "../Hamburger";
 
 import logoImg from "../../../images/logo.svg";
-import { Header, Container, Logo } from "./styles";
+import closeImg from "../../../images/icon-close.svg";
+
+import { Header, Container, Logo, CloseIcon, MenuList } from "./styles";
 
 const Nav = () => {
   return (
     <Header>
       <Container>
         <Logo src={logoImg}></Logo>
-        <ManageMenu />
+        <>
+          <Hamburguer />
+          <MenuList>
+            <li>Product</li>
+            <li>Features</li>
+            <li>Pricing</li>
+            <li>
+              <div className="menuDivider"></div>
+            </li>
+            <li className="disabled">Login</li>
+          </MenuList>
+        </>
       </Container>
     </Header>
   );

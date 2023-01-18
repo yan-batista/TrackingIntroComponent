@@ -22,4 +22,8 @@ export default createGlobalStyle`
     button {
         cursor: pointer;
     }
+
+    .disabled {
+      color: ${colors.grayishBlue};
+    }
 `;

@@ -70,9 +70,17 @@ export const MenuList = styled.ul`
     font-size: 16px;
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 700;
+
     text-transform: uppercase;
     letter-spacing: 1px;
+
     margin-right: 35px;
+
+    cursor: pointer;
+  }
+
+  & > li:hover:not(.disabled) {
+    border-bottom: 1px solid ${colors.darkGrayishBlue};
   }
 
   .menuDivider {

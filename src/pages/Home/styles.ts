@@ -31,7 +31,7 @@ export const DevicesImg = styled.img.attrs((props) => {
 
 export const Container = styled.div`
   max-width: 100vw;
-  overflow-x: hidden;
+  overflow: hidden;
   position: relative;
 
   @media ${devices.desktop} {
@@ -40,7 +40,6 @@ export const Container = styled.div`
     justify-content: flex-start;
 
     margin-top: 50px;
-    padding-bottom: 60px;
   }
 
   @media ${devices.desktop_lg} {

@@ -26,4 +26,8 @@ export default createGlobalStyle`
     .disabled {
       color: ${colors.grayishBlue};
     }
+
+    .disabled:hover {
+      border-bottom: 1px solid ${colors.grayishBlue};
+    }
 `;

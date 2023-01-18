@@ -23,16 +23,16 @@ This is a solution to the [Project tracking intro component challenge on Fronten
 
 Users should be able to:
 
-- [ ] View the optimal layout for the site depending on their device's screen size
-- [ ] See hover states for all interactive elements on the page
+- [x] View the optimal layout for the site depending on their device's screen size
+- [x] See hover states for all interactive elements on the page
 - [x] Create the background shape using code
 
 ### Screenshot
 
 ### Links
 
-- Solution URL:
-- Live Site URL:
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/project-tracking-intro-component-mu2lrsaRPo)
+- Live Site URL: [Live](https://tracking-intro-component-green.vercel.app)
 
 ## My process
 

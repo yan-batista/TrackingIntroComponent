@@ -99,6 +99,7 @@ export const MainContainer = styled.div`
 
     line-height: 25px;
     font-weight: 500;
+    color: ${colors.grayishBlue};
   }
 
   @media ${devices.tablet} {
@@ -131,10 +132,12 @@ export const TopMainContainer = styled.div`
   align-items: center;
 
   & > .dashboard {
-    font-family: "Barlow Condensed", sans-serif;
     letter-spacing: 5px;
+    font-family: "Barlow Condensed", sans-serif;
     font-size: 15px;
     font-weight: 500;
+    color: ${colors.grayishBlue};
+
     position: relative;
     margin-left: 18px;
   }
@@ -169,6 +172,8 @@ export const MainContainerFooter = styled.div`
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
+    color: ${colors.grayishBlue};
+
     margin-left: 8px;
   }
 

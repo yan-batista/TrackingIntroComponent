@@ -1,21 +1,51 @@
 import styled from "styled-components";
 import colors from "../../styles/colors";
+import devices from "../../styles/devices";
 
 export const DevicesImg = styled.img.attrs((props) => {
   src: props.src;
 })`
   width: 500px;
   position: relative;
-  //left: 10px;
   top: 21px;
   right: -3%;
   overflow-x: hidden;
+  padding-bottom: 20px;
+
+  @media ${devices.tablet} {
+    right: -30%;
+  }
+
+  @media ${devices.desktop} {
+    position: absolute;
+    top: 250px;
+    right: -10%;
+    width: 60%;
+  }
+
+  @media ${devices.desktop_lg} {
+    width: 67%;
+    top: 206px;
+    right: -19%;
+  }
 `;
 
 export const Container = styled.div`
   max-width: 100vw;
   overflow-x: hidden;
-  padding-bottom: 20px;
+
+  @media ${devices.desktop} {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    margin-top: 50px;
+  }
+
+  @media ${devices.desktop_lg} {
+    margin-left: 135px;
+    margin-top: 75px;
+  }
 `;
 
 export const BackgroundElement = styled.div`
@@ -30,13 +60,21 @@ export const BackgroundElement = styled.div`
 
   left: 50%;
   top: 0;
+
+  @media ${devices.desktop} {
+    width: 60vw;
+  }
 `;
 
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 30px;
+  max-width: 100vw;
+  flex-wrap: wrap;
 
   max-width: 100%;
   margin-top: 85px;
@@ -50,18 +88,38 @@ export const MainContainer = styled.div`
     color: ${colors.veryDarkBlue};
 
     line-height: 40px;
-    max-width: 85%;
-    padding-left: 5px;
+    max-width: 89%;
   }
 
   .description {
-    max-width: 85%;
+    max-width: 90%;
     padding-right: 30px;
-    margin-top: 17px;
+    margin-top: 15px;
 
     line-height: 25px;
     font-weight: 500;
-    padding-left: 5px;
+  }
+
+  @media ${devices.tablet} {
+    align-items: center;
+  }
+
+  @media ${devices.desktop} {
+    align-items: flex-start;
+  }
+
+  @media ${devices.desktop_lg} {
+    .title {
+      font-size: 65px;
+      line-height: 65px;
+      max-width: 60%;
+      margin-top: 6px;
+    }
+
+    .description {
+      margin-top: 33px;
+      max-width: 35%;
+    }
   }
 `;
 
@@ -77,7 +135,11 @@ export const TopMainContainer = styled.div`
     font-size: 15px;
     font-weight: 500;
     position: relative;
-    left: -2%;
+    margin-left: 18px;
+  }
+
+  @media ${devices.desktop_lg} {
+    margin-bottom: 8px;
   }
 `;
 
@@ -92,22 +154,38 @@ export const NewButton = styled.span`
   font-weight: 700;
 
   position: relative;
-  left: -8%;
 `;
 
 export const MainContainerFooter = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  width: 85%;
-  margin-top: 29px;
+  justify-content: flex-start;
+  width: 90%;
+  margin-top: 25px;
 
   .preview-text {
     font-size: 13px;
     font-weight: 500;
     letter-spacing: 1px;
     margin-left: 8px;
+  }
+
+  @media ${devices.tablet} {
+    justify-content: center;
+  }
+
+  @media ${devices.desktop} {
+    justify-content: flex-start;
+  }
+
+  @media ${devices.desktop_lg} {
+    margin-top: 60px;
+
+    .preview-text {
+      margin-left: 20px;
+      letter-spacing: 4px;
+    }
   }
 `;
 
@@ -126,5 +204,10 @@ export const ScheduleButton = styled.button`
   padding: 12px 22px;
 
   position: relative;
-  left: -14px;
+
+  @media ${devices.desktop_lg} {
+    font-size: 15px;
+    width: 185px;
+    height: 50px;
+  }
 `;

@@ -1,10 +1,12 @@
 import GlobalStyle from "./styles/global";
 
+import illustDevices from "../images/illustration-devices.svg";
+import Home from "./pages/Home/index";
+
 function App() {
   return (
     <div className="App">
-      <h1>Home</h1>
-
+      <Home />
       <GlobalStyle />
     </div>
   );

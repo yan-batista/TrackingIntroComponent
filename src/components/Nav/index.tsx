@@ -3,15 +3,14 @@ import React from "react";
 import Hamburguer from "../Hamburger";
 
 import logoImg from "../../../images/logo.svg";
-import closeImg from "../../../images/icon-close.svg";
 
-import { Header, Container, Logo, CloseIcon, MenuList } from "./styles";
+import { Header, Container, Logo, MenuList } from "./styles";
 
 const Nav = () => {
   return (
     <Header>
       <Container>
-        <Logo src={logoImg}></Logo>
+        <Logo src={logoImg} alt="logo composed of a black square with an upside down 'y' "></Logo>
         <>
           <Hamburguer />
           <MenuList>

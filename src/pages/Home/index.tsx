@@ -20,7 +20,7 @@ const Home = () => {
       <Nav />
       <BackgroundElement />
       <Container>
-        <DevicesImg src={devicesImg} />
+        <DevicesImg src={devicesImg} alt="cellphone and computer side by side" />
 
         <MainContainer>
           <TopMainContainer>

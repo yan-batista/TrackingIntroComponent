@@ -16,8 +16,14 @@ const Hamburger = () => {
 
   return (
     <>
-      {active && <CloseIcon src={closeImg} onClick={handleClick} />}
-      {!active && <CloseIcon src={hamburgerImg} onClick={handleClick} />}
+      {active && <CloseIcon src={closeImg} onClick={handleClick} alt="X icon to close the menu" />}
+      {!active && (
+        <CloseIcon
+          src={hamburgerImg}
+          onClick={handleClick}
+          alt="3 horizonal lines on top of each other. Icon to open the menu"
+        />
+      )}
       <Container className="menu" menuActive={active}>
         <ul>
           <li>Product</li>

@@ -4,6 +4,7 @@ import colors from "../../styles/colors";
 
 export const IconImg = styled.img.attrs((props) => {
   src: props.src;
+  alt: props.alt;
 })`
   position: relative;
   width: 24px;

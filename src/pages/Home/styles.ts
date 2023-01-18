@@ -10,7 +10,6 @@ export const DevicesImg = styled.img.attrs((props) => {
   top: 21px;
   right: -3%;
   overflow-x: hidden;
-  padding-bottom: 20px;
 
   @media ${devices.tablet} {
     right: -30%;
@@ -18,21 +17,22 @@ export const DevicesImg = styled.img.attrs((props) => {
 
   @media ${devices.desktop} {
     position: absolute;
-    top: 250px;
-    right: -10%;
-    width: 60%;
+    top: 80px;
+    right: -100px;
+    width: 600px;
   }
 
   @media ${devices.desktop_lg} {
-    width: 67%;
-    top: 206px;
-    right: -19%;
+    width: 965px;
+    top: 35px;
+    right: -275px;
   }
 `;
 
 export const Container = styled.div`
   max-width: 100vw;
   overflow-x: hidden;
+  position: relative;
 
   @media ${devices.desktop} {
     display: flex;
@@ -40,11 +40,13 @@ export const Container = styled.div`
     justify-content: flex-start;
 
     margin-top: 50px;
+    padding-bottom: 60px;
   }
 
   @media ${devices.desktop_lg} {
     margin-left: 135px;
     margin-top: 75px;
+    padding-bottom: 50px;
   }
 `;
 
@@ -62,7 +64,7 @@ export const BackgroundElement = styled.div`
   top: 0;
 
   @media ${devices.desktop} {
-    width: 60vw;
+    width: 50vw;
   }
 `;
 

@@ -8,10 +8,18 @@ export default createGlobalStyle`
         box-sizing: border-box;
     }
 
+    html, body {
+        max-width: 100vw;
+    }
+
     *, input, button, span {
         font-size: 18px;
         font-family: 'Barlow', sans-serif;
         font-weight: 400;
         color: ${colors.veryDarkBlue}
+    }
+
+    button {
+        cursor: pointer;
     }
 `;

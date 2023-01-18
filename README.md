@@ -25,7 +25,7 @@ Users should be able to:
 
 - [ ] View the optimal layout for the site depending on their device's screen size
 - [ ] See hover states for all interactive elements on the page
-- [ ] Create the background shape using code
+- [x] Create the background shape using code
 
 ### Screenshot
 
@@ -46,6 +46,10 @@ Users should be able to:
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
+
+**Hidding an absolute positioned element**
+
+I went throught a lot of trouble before I found out that I should make sure to have the parent element be relative positioned when having a absolute positioned with `overflow: hidden`
 
 ## Author
 

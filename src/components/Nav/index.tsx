@@ -1,15 +1,16 @@
 import React from "react";
 
+import ManageMenu from "../ManageMenu";
+
 import logoImg from "../../../images/logo.svg";
-import closeImg from "../../../images/icon-close.svg";
-import { Header, Container, Logo, CloseIcon } from "./styles";
+import { Header, Container, Logo } from "./styles";
 
 const Nav = () => {
   return (
     <Header>
       <Container>
         <Logo src={logoImg}></Logo>
-        <CloseIcon src={closeImg} />
+        <ManageMenu />
       </Container>
     </Header>
   );

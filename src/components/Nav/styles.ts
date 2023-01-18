@@ -7,7 +7,7 @@ export const IconImg = styled.img.attrs((props) => {
   position: relative;
   width: 24px;
 
-  @media ${devices.desktop_lg} {
+  @media ${devices.desktop} {
     width: 30px;
     top: 25px;
   }
@@ -16,13 +16,9 @@ export const IconImg = styled.img.attrs((props) => {
 export const Logo = styled(IconImg)`
   left: -7px;
 
-  @media ${devices.desktop_lg} {
+  @media ${devices.desktop} {
     left: -15px;
   }
-`;
-
-export const CloseIcon = styled(IconImg)`
-  left: 7px;
 `;
 
 export const Container = styled.div`
@@ -34,7 +30,7 @@ export const Container = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  @media ${devices.desktop_lg} {
+  @media ${devices.desktop} {
     width: 80%;
   }
 `;
@@ -44,7 +40,7 @@ export const Header = styled.header`
   flex-direction: row;
   justify-content: space-between;
 
-  @media ${devices.desktop_lg} {
+  @media ${devices.desktop} {
     justify-content: center;
   }
 `;
